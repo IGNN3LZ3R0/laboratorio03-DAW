@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a19e9e;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        h1 {
+            color: #333;
+            margin: 0;
+            text-align: center;
+        }
+        #central {
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+        button {
+            padding: 8px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .tatuaje-container {
+            display: inline-block;
+            width: 30%; /* Ajusta el ancho de cada contenedor de imagen */
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            margin-left:200px;
+        }
+        .tatuaje-container img {
+            width: 100%; /* Hace que todas las imágenes tengan el mismo ancho */
+            height: auto; /* Mantiene la proporción de aspecto */
+            display: block;
+            margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <h1>PINTEREST</h1>
+    <hr>
+    <div id="central">
+        <input type="text" id="nombreTatuaje" placeholder="Ingrese un tatuaje">
+        <button onclick="buscarDescripcion()">Buscar</button>
+    </div>
+    <hr>
+    <div class="tatuaje-container" id="tatuaje1"></div>
+    <div class="tatuaje-container" id="tatuaje2"></div>
+    <div class="tatuaje-container" id="tatuaje3"></div>
+    <div class="tatuaje-container" id="tatuaje4"></div>
+    <hr>
+    
+    <script src="laboratorio05.js"></script>
+    
+</body>
+</html>
